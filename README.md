@@ -2,6 +2,11 @@
 
 Pipeline pelatihan dan evaluasi prediksi suhu ruang server dengan LSTM, GRU, serta pembanding Naive, Seasonal Naive, Moving Average, dan ARIMA. Repositori berisi kode aktif, data sumber, konfigurasi penelitian, notebook pengendali, dan tes. Model terlatih dan hasil eksperimen disimpan terpisah.
 
+## Pilih versi
+
+- **Modular.** Gunakan susunan folder repositori dan [panduan berkas](PANDUAN_FILE.md) untuk membaca atau mengembangkan kode per tahap.
+- **Satu notebook.** Unduh [PipelineTemperatureForecasting_Standalone.ipynb](PipelineTemperatureForecasting_Standalone.ipynb) untuk menjalankan kode, konfigurasi, dan CSV yang tertanam tanpa menyalin folder repositori. Pengaturan awal menjalankan praproses. Pilih `TAHAP = "lengkap"` untuk pelatihan hingga evaluasi pada kernel Linux atau WSL dengan GPU yang terdeteksi TensorFlow.
+
 ## Mulai membaca
 
 1. Baca [PANDUAN_FILE.md](PANDUAN_FILE.md) untuk fungsi setiap berkas.
