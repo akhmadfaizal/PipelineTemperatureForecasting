@@ -5,7 +5,7 @@ Mulai dari README, kemudian buka notebook pengendali. Notebook memanggil skrip; 
 | Berkas | Tanggung jawab | Masukan dan keluaran utama |
 |---|---|---|
 | `config.yaml` | Parameter penelitian yang berlaku | Periode, split, fitur, grid, seed, baseline dan evaluasi |
-| `01_dataset_sumber/sensor_raw.csv` | Lokasi bawaan CSV yang disiapkan secara lokal | Dibaca praproses |
+| `01_dataset_sumber/sensor_raw.csv` | CSV ekspor sumber yang disertakan di repositori | Praproses memilih jendela penelitian sesuai konfigurasi |
 | `02_pengendali/02_pengendali_training.ipynb` | Antarmuka mulai/pantau melalui Jupyter Windows | Memanggil WSL setelah jalur disesuaikan, lalu menampilkan status |
 | `02_pengendali/notebook_support.py` | Fungsi kecil untuk pemantauan dan pemanggilan WSL | Status/CSV/log; tidak melatih model sendiri |
 | `02_pengendali/unpack_runtime_pc.py` | Memeriksa lalu mengekstrak paket Mac | ZIP dan folder baru; tidak memulai training |

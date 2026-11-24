@@ -1,6 +1,6 @@
 # PipelineTemperatureForecasting
 
-Pipeline pelatihan dan evaluasi prediksi suhu ruang server dengan LSTM, GRU, serta pembanding Naive, Seasonal Naive, Moving Average, dan ARIMA. Repositori berisi kode aktif, konfigurasi penelitian, notebook pengendali, dan tes. Dataset penelitian, model terlatih, dan hasil eksperimen disimpan terpisah.
+Pipeline pelatihan dan evaluasi prediksi suhu ruang server dengan LSTM, GRU, serta pembanding Naive, Seasonal Naive, Moving Average, dan ARIMA. Repositori berisi kode aktif, data sumber, konfigurasi penelitian, notebook pengendali, dan tes. Model terlatih dan hasil eksperimen disimpan terpisah.
 
 ## Mulai membaca
 
@@ -38,7 +38,7 @@ Baseline dan evaluasi adalah tahap terpisah. Training selesai tidak otomatis ber
 
 Gunakan Python 3.12 dan instal dependensi dengan `python -m pip install -r requirements.txt`. Konfigurasi pelatihan memerlukan TensorFlow yang dapat memakai GPU pada lingkungan WSL/Linux. Pemeriksaan kode di bawah dapat dijalankan tanpa dataset atau GPU.
 
-Untuk menjalankan praproses dan pelatihan, siapkan CSV lokal yang boleh digunakan pada `01_dataset_sumber/sensor_raw.csv` atau atur `data.csv_path` di `config.yaml`. Kolom masukan bawaan adalah `waktu_wib`, `temperature`, dan `humidity`. Controller training memvalidasi periode dan pembagian 42 hari yang tercantum pada konfigurasi.
+Praproses dan pelatihan membaca [`01_dataset_sumber/sensor_raw.csv`](01_dataset_sumber/sensor_raw.csv) secara bawaan. CSV sumber berisi 76.979 pembacaan pada 4 Agustus–6 Oktober 2026. Praproses memilih jendela penelitian 20 Agustus–30 September 2026 (WIB) yang memuat 67.299 pembacaan sebelum penyaringan. Kolom masukan adalah `waktu_wib`, `temperature`, dan `humidity`. Kolom `linkquality` mencatat kualitas sinyal dan tidak menjadi masukan model. Controller training memvalidasi periode dan pembagian 42 hari pada konfigurasi.
 
 ## Perintah WSL
 

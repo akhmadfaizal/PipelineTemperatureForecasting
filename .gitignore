@@ -5,7 +5,8 @@ __pycache__/
 .venv/
 .env
 .env.*
-/01_dataset_sumber/
+/01_dataset_sumber/*
+!/01_dataset_sumber/sensor_raw.csv
 /hasil_eksperimen/
 /02_pengendali/pc_execution.json
 /package_manifest.json
