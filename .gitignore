@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.env
+.env.*
+/01_dataset_sumber/
+/hasil_eksperimen/
+/02_pengendali/pc_execution.json
+/package_manifest.json
+*.keras
+*.npz
